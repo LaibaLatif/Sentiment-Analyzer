@@ -23,24 +23,6 @@
 
 ## 2. Architecture (10 agents)
 
-flowchart LR
-    T[User text] --> NLP[NLPAgent\nTF-IDF + LR]
-    I[User image] --> CNN[CVAgent / CNNAgent\nSmallCNN + TTA]
-    I --> DF[DeepFaceAgent\nDeepFace or HF ViT]
-    NLP --> SAFE[SafetyAgent\ncrisis lexicon]
-    NLP --> FUSE
-    CNN --> CMP[ComparisonAgent]
-    DF --> CMP
-    CMP --> FUSE[FusionAgent\nimage + multimodal]
-    FUSE --> SUP[SupervisorAgent\nfinal decision]
-    SAFE --> SUP
-    SUP --> SUG[SuggestionsAgent\nmode-aware tips]
-    SUP --> XAI[XAIAgent\nLIME + summary]
-    SUG --> UI[Streamlit UI]
-    XAI --> UI
-    SUP --> UI
-    HPT[HPTAgent\n(training-time)] -. tunes .-> NLP
-
 
 | Agent                  | Role                                                                                                                                |
 | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
