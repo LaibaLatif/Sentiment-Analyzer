@@ -1,0 +1,40 @@
+# Works on Python 3.10 - 3.14.
+# Note: TensorFlow has no wheel for 3.13/3.14, so we ship a PyTorch CNN +
+# a HuggingFace ViT facial-emotion model as a DeepFace fallback.
+
+numpy>=1.24.0,<3
+pandas>=2.0.0
+scikit-learn>=1.3.0
+joblib>=1.3.0
+pyarrow>=14.0.0
+
+# CNN
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Imaging
+Pillow>=10.0.0
+opencv-python-headless>=4.8.0
+
+# DeepFace fallback (works on 3.13/3.14 without TensorFlow)
+transformers>=4.36.0
+safetensors>=0.4.0
+
+# Explainability + UI
+lime>=0.2.0
+streamlit>=1.29.0
+
+matplotlib>=3.7.0
+ipykernel>=6.0
+notebook>=7.0
+
+# Digital Image Processing (DIP)
+easyocr>=1.7.0
+# mediapipe>=0.10.0  # Optional: better face detection (skip if permission issues)
+
+# Tests (used by `python -m pytest`)
+pytest>=8.0
+
+# Optional (Python 3.10-3.12 only): swap the HF fallback for real DeepFace
+# tensorflow>=2.15.0
+# deepface>=0.0.90
