@@ -23,7 +23,6 @@
 
 ## 2. Architecture (10 agents)
 
-```mermaid
 flowchart LR
     T[User text] --> NLP[NLPAgent\nTF-IDF + LR]
     I[User image] --> CNN[CVAgent / CNNAgent\nSmallCNN + TTA]
@@ -41,7 +40,7 @@ flowchart LR
     XAI --> UI
     SUP --> UI
     HPT[HPTAgent\n(training-time)] -. tunes .-> NLP
-```
+
 
 | Agent                  | Role                                                                                                                                |
 | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
