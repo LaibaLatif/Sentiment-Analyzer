@@ -1,0 +1,39 @@
+{
+  "threshold": 0.5,
+  "n_test": 10536,
+  "accuracy": 0.9507403189066059,
+  "macro_f1": 0.9433609917053057,
+  "weighted_f1": 0.9511186961888183,
+  "roc_auc": 0.9899965578965629,
+  "pr_auc": 0.995231630868068,
+  "per_class": [
+    {
+      "class": "Positive (Normal)",
+      "precision": 0.8969399538106235,
+      "recall": 0.9504435607219334,
+      "f1": 0.9229169760879251,
+      "support": 3269
+    },
+    {
+      "class": "Negative (Depression)",
+      "precision": 0.9770927601809954,
+      "recall": 0.9508738131278381,
+      "f1": 0.9638050073226864,
+      "support": 7267
+    }
+  ],
+  "classes": [
+    "Positive (Normal)",
+    "Negative (Depression)"
+  ],
+  "confusion_matrix": [
+    [
+      3107,
+      162
+    ],
+    [
+      357,
+      6910
+    ]
+  ]
+}

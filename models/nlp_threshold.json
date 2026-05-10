@@ -1,0 +1,8 @@
+{
+  "threshold": 0.33,
+  "metric": "macro_f1",
+  "macro_f1_at_threshold": 0.9522522914391118,
+  "macro_f1_at_0.5": 0.9433609917053057,
+  "delta_macro_f1": 0.00889129973380609,
+  "n_test": 10536
+}
